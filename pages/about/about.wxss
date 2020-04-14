@@ -1,0 +1,4 @@
+/* pages/about.wxss */
+.fontColor{
+  color:red
+}
