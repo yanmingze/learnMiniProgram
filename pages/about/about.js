@@ -1,13 +1,25 @@
 // pages/about.js
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
-
+    name:'小程序',
+    students:[
+      {name:"jobe",id:1},
+      {name:"kobe",id:2},
+      {name:"lone",id:31}
+    ],
+    counter:1
   },
-
+  //添加监听事件
+  handButtonClick(){
+//this.data.counter+=1  这是错误的做法，界面不会刷新
+this.setData({
+  counter:this.data.counter+1
+})
+  },
   /**
    * 生命周期函数--监听页面加载
    */

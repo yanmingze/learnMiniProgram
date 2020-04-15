@@ -1,2 +1,7 @@
 <!--pages/about.wxml-->
 <text class="fontColor">about </text>
+<view>{{name}}</view>
+<view>{{students[0].name}}</view><view>{{students[0].id}}</view>
+<view wx:for="{{students}}" wx:key="id">{{item.name}}-----{{item.id}}</view>
+<view>{{counter}}</view>
+<button bindtap="handButtonClick" type="mini">+</button>
